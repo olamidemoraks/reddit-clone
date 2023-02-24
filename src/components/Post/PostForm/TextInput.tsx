@@ -22,7 +22,7 @@ const TextInput: React.FC<TextInputProps> = ({
     <Stack spacing={3} width="100%">
       <Input
         name="title"
-        // value={}
+        value={textInput.title}
         fontSize="10pt"
         borderRadius={4}
         placeholder="Title"
@@ -41,7 +41,7 @@ const TextInput: React.FC<TextInputProps> = ({
       />
       <Textarea
         name="body"
-        // value={}
+        value={textInput.body}
         color="black"
         height="100px"
         fontSize="10pt"
