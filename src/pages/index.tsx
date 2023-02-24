@@ -115,11 +115,11 @@ export default function Home() {
 
   useEffect(() => {
     if (user && postStateValue.posts.length) getUserPostVotes();
-  }, [user, postStateValue.posts]);
+  }, [user, postStateValue.posts]); // eslint-disable-next-line react-hooks/exhaustive-dep
 
   useEffect(() => {
     if (communityStateValue.snippetFetched) buildUserHomeFeed();
-  }, [communityStateValue.snippetFetched]);
+  }, [communityStateValue.snippetFetched]); // eslint-disable-next-line react-hooks/exhaustive-dep
 
   useEffect(() => {
     if (!user && !loadingUser) buildNoUserHomeFeed();
@@ -131,7 +131,7 @@ export default function Home() {
         postVotes: [],
       }));
     };
-  }, [user, loadingUser]);
+  }, [user, loadingUser]); // eslint-disable-next-line react-hooks/exhaustive-dep
 
   return (
     <PageContent>

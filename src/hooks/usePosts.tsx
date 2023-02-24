@@ -176,7 +176,7 @@ const usePosts = () => {
     if (!currentCommunity?.id || !user) return;
 
     getCommunityPostVotes(currentCommunity.id);
-  }, [currentCommunity, user]);
+  }, [currentCommunity, user]); // eslint-disable-next-line react-hooks/exhaustive-dep
 
   useEffect(() => {
     if (!user) {
@@ -185,7 +185,7 @@ const usePosts = () => {
         postVotes: [],
       }));
     }
-  }, [user]);
+  }, [user]); // eslint-disable-next-line react-hooks/exhaustive-dep
   return {
     postStateValue,
     setPostStateValue,

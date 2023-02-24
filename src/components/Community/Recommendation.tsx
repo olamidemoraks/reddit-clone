@@ -44,7 +44,7 @@ const Recommendation: React.FC = () => {
 
   useEffect(() => {
     getCommunityRecommendations();
-  }, []);
+  }, []); // eslint-disable-next-line react-hooks/exhaustive-dep
 
   return (
     <Flex
@@ -110,6 +110,7 @@ const Recommendation: React.FC = () => {
                             borderRadius="full"
                             boxSize="28px"
                             mr={2}
+                            alt=""
                           />
                         ) : (
                           <Icon
