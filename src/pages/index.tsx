@@ -115,13 +115,13 @@ export default function Home() {
 
   useEffect(() => {
     if (user && postStateValue.posts.length) getUserPostVotes();
-     // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user, postStateValue.posts]);
 
   useEffect(() => {
     if (communityStateValue.snippetFetched) buildUserHomeFeed();
-    // eslint-disable-next-line react-hooks/exhaustive-dep
-  }, [communityStateValue.snippetFetched]); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [communityStateValue.snippetFetched]);
 
   useEffect(() => {
     if (!user && !loadingUser) buildNoUserHomeFeed();
@@ -133,8 +133,8 @@ export default function Home() {
         postVotes: [],
       }));
     };
-    // eslint-disable-next-line react-hooks/exhaustive-dep
-  }, [user, loadingUser]); 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user, loadingUser]);
 
   return (
     <PageContent>

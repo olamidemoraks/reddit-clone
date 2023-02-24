@@ -31,6 +31,7 @@ const AuthModal: React.FC = () => {
       handleClose();
       console.log(user);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return (

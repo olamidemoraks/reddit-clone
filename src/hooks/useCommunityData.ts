@@ -150,7 +150,7 @@ const useCommunityData = () => {
     if (!communityStateValue.currentCommunity && communityId) {
       fetchCommunity(communityId as string);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query, communityStateValue.currentCommunity]);
 
   useEffect(() => {
@@ -163,7 +163,7 @@ const useCommunityData = () => {
       return;
     }
     getMySnippet();
-    // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return {

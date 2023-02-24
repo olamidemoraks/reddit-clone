@@ -27,7 +27,7 @@ const CommunityPage: React.FC<CommunityPageProps> = ({ communityData }) => {
       ...prev,
       currentCommunity: communityData,
     }));
-     // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [communityData]);
 
   return (

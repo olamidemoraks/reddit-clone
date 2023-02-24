@@ -44,7 +44,7 @@ const Recommendation: React.FC = () => {
 
   useEffect(() => {
     getCommunityRecommendations();
-    // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
