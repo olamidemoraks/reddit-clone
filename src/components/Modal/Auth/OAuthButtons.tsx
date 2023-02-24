@@ -18,6 +18,7 @@ const OAuthButtons: React.FC = () => {
     if (userCred) {
       createUserDoc(userCred.user);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [userCred]);
 
   return (
