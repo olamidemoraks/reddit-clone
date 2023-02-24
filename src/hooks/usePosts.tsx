@@ -176,7 +176,8 @@ const usePosts = () => {
     if (!currentCommunity?.id || !user) return;
 
     getCommunityPostVotes(currentCommunity.id);
-  }, [currentCommunity, user]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [currentCommunity, user]);
 
   useEffect(() => {
     if (!user) {
@@ -185,7 +186,8 @@ const usePosts = () => {
         postVotes: [],
       }));
     }
-  }, [user]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [user]);
   return {
     postStateValue,
     setPostStateValue,

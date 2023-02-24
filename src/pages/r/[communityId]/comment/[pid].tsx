@@ -41,7 +41,8 @@ const PostPage: React.FC = () => {
     if (pid && !postStateValue.selectedPost) {
       fetchPost(pid as string);
     }
-  }, [router.query, postStateValue.selectedPost]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [router.query, postStateValue.selectedPost]); 
 
   return (
     <PageContent>

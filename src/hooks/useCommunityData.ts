@@ -150,8 +150,8 @@ const useCommunityData = () => {
     if (!communityStateValue.currentCommunity && communityId) {
       fetchCommunity(communityId as string);
     }
-    console.log("Home page");
-  }, [router.query, communityStateValue.currentCommunity]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [router.query, communityStateValue.currentCommunity]);
 
   useEffect(() => {
     if (!user) {
@@ -163,7 +163,8 @@ const useCommunityData = () => {
       return;
     }
     getMySnippet();
-  }, [user]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [user]);
 
   return {
     communityStateValue,

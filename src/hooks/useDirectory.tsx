@@ -50,7 +50,8 @@ const useDirectory = () => {
         },
       }));
     }
-  }, [communityStateValue.currentCommunity]); // eslint-disable-next-line react-hooks/exhaustive-dep
+    // eslint-disable-next-line react-hooks/exhaustive-dep
+  }, [communityStateValue.currentCommunity]);
 
   return { directoryState, toggleMenuOpen, onSelectMenuItem };
 };
